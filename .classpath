@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/java-6-sun-1.6.0.26"/>
+	<classpathentry kind="lib" path="lib/hazelcast-3.0.2.jar"/>
+	<classpathentry kind="lib" path="lib/jain-sip-api-1.2.0.jar"/>
+	<classpathentry kind="lib" path="lib/jain-sip-ri-1.2.X-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="lib/mobicents-jain-sip-ext-1.2.0.FINAL.jar"/>
+	<classpathentry kind="lib" path="lib/mobicents-jain-sip-ha-core-1.5.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="lib/sip-balancer-jar-1.7.0-SNAPSHOT.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
