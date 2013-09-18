@@ -4,7 +4,7 @@ This project is a testing implementation of a custom cache for jain-sip-ha from 
 
 Shootme is a simple example from jain-sip library. Jain-sip implementation has been taken from mobicents project. Libraries are included in lib forder or you cat get it from mobicents distribution.
 
-Cache module is implemented with Hazelcast, which is amazingly easy to use.
+Cache module is implemented with Hazelcast, which is amazingly easy to use. By now, only dialogs are cached, no transactions.
 
 A timestamp is stored in dialog application data on INVITE request and call length is printed on disconnection. This application data is replicated between nodes.
 
