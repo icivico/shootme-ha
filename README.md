@@ -39,11 +39,13 @@ You can also tune log4j.properties for more or less traces. jain-sip and hazelca
 
 Running
 -------
-* Start balancer with:
-<balancer-path>$ java -jar sip-balancer-jar-1.6.0.FINAL-jar-with-dependencies.jar -mobicents-balancer-config=./lb-configuration.properties
+* cd to sip-balancer folder and start it:
 
-* Start all the instances with:
-<nodeX-path>$ ./run.sh
+$ java -jar sip-balancer-jar-1.6.0.FINAL-jar-with-dependencies.jar -mobicents-balancer-config=./lb-configuration.properties
+
+* cd to each shootme instance folder and start it:
+
+$ ./run.sh
 
 Now you can call to sip-balancer external port and will see the call progresing on one of the nodes.
 
@@ -76,5 +78,5 @@ Node failure and hangup from node
 
 References
 ----------
-Mobicents project - http://www.telestax.com/opensource/
-Hazelcast - http://www.hazelcast.com
+* Mobicents project - http://www.telestax.com/opensource/
+* Hazelcast - http://www.hazelcast.com
