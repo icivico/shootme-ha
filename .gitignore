@@ -1,2 +1,9 @@
 /cache
 /*.txt
+/target
+*.properties
+
+# eclipse
+.project
+.classpath
+.settings/
