@@ -4,7 +4,7 @@ This project is a testing implementation of a custom cache for jain-sip-ha from 
 
 Shootme is a simple example from jain-sip library. Jain-sip implementation has been taken from mobicents project. Libraries are included in lib forder or you cat get it from mobicents distribution.
 
-Cache module is implemented with Hazelcast, which is amazingly easy to use.
+Cache module is implemented with Hazelcast, which is amazingly easy to use. By now, only dialogs are cached, no transactions.
 
 A timestamp is stored in dialog application data on INVITE request and call length is printed on disconnection. This application data is replicated between nodes.
 
@@ -39,11 +39,13 @@ You can also tune log4j.properties for more or less traces. jain-sip and hazelca
 
 Running
 -------
-* Start balancer with:
-<balancer-path>$ java -jar sip-balancer-jar-1.6.0.FINAL-jar-with-dependencies.jar -mobicents-balancer-config=./lb-configuration.properties
+* cd to sip-balancer folder and start it:
 
-* Start all the instances with:
-<nodeX-path>$ ./run.sh
+$ java -jar sip-balancer-jar-1.6.0.FINAL-jar-with-dependencies.jar -mobicents-balancer-config=./lb-configuration.properties
+
+* cd to each shootme instance folder and start it:
+
+$ ./run.sh
 
 Now you can call to sip-balancer external port and will see the call progresing on one of the nodes.
 
@@ -76,5 +78,5 @@ Node failure and hangup from node
 
 References
 ----------
-Mobicents project - http://www.telestax.com/opensource/
-Hazelcast - http://www.hazelcast.com
+* Mobicents project - http://www.telestax.com/opensource/
+* Hazelcast - http://www.hazelcast.com
