@@ -11,7 +11,10 @@ dialogId is stored in cache on ACK request. In case of attending node failure, i
 
 Compilation
 -----------
-Execute 
+You will need jain-sip-ri 1.2.X-SNAPSHOT from mobicents sip-servlets 3.0 distribution and install into your local maven repository.
+Mobicents 3.0-SNAPSHOT can be downloaded from here: https://mobicents.ci.cloudbees.com/job/Mobicents-SipServlets-Release/lastSuccessfulBuild/artifact/
+
+Execute: 
 
 mvn clean install
 
